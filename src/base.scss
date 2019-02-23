@@ -1,0 +1,11 @@
+// fonts
+@import 'style-config/fonts.scss';
+
+// basic styles for body, wrappers
+@import 'style-config/variables.scss';
+@import 'style-config/main.scss';
+
+// sections
+@import 'blocks/user/user.scss';
+@import 'blocks/profile/profile.scss';
+@import 'blocks/contact/contact.scss';
