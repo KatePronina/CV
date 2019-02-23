@@ -1,8 +1,6 @@
 mixin contact(name, ...contacts)
     section.contact
-        header.header.header--contact
-            .header__img.header__img--contact
-            h2.header__title= name
+        +header(name)
         table.contact__items
             each contact in contacts
                 tr.contact__item

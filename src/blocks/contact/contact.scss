@@ -1,7 +1,10 @@
-.header--contact {
+.contact {
+    margin-bottom: 3.25rem;
+}
+.contact .header {
     margin-bottom: 1.8rem;
 }
-.header__img--contact {
+.contact .header__img {
     background-image: url('blocks/contact/phone.png');
 }
 .contact__name {

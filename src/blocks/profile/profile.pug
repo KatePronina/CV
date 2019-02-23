@@ -1,7 +1,5 @@
 mixin profile(name, text, boldtext)
     section.profile
-        header.header.header--profile
-            .header__img.header__img--profile
-            h2.header__title= name
+        +header(name)
         p.profile__description= text
             b.profile__description-important= boldtext

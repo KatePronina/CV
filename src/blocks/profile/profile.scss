@@ -1,7 +1,7 @@
 .profile {
     margin-bottom: 2.7rem;
 }
-.header__img--profile {
+.profile .header__img {
     background-image: url('blocks/profile/user.png');
 } 
 .profile__description {
@@ -9,6 +9,6 @@
     font-size: 1rem;
     line-height: 1.2rem;
 }
-.header--profile {
+.profile .header {
     margin-bottom: .75rem;
 }
