@@ -23,11 +23,12 @@
 .experience__item-name {
     margin-right: .7rem;
     letter-spacing: .4px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .experience__item-name--education {
-    font-weight: bold;
+    
     color: $blue;
-    text-transform: uppercase;
 }
 .experience__item-organization {
     display: block;

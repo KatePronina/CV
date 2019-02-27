@@ -1,0 +1,5 @@
+mixin softwareItem(name, percent)
+    li.software__item
+        span.software__name= name
+        .software__bar
+            .software__progress(aria-label= percent + '%', style='width:' + percent + '%')

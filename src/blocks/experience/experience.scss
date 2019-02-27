@@ -1,5 +1,9 @@
 .education {
     margin-top: 4.6rem;
+    margin-bottom: 3.36rem;
+}
+.experience {
+    margin-bottom: 3.4rem;
 }
 .education__header {
     margin-bottom: 1.8rem;
@@ -7,6 +11,13 @@
     &::before {
         background-image: url('blocks/experience/star.png');
     }   
+}
+.experience__header {
+    margin-bottom: 2.65rem;
+
+    &::before {
+        background-image: url('blocks/experience/portfolio.png');
+    }
 }
 .experience__list {
     margin: 0;
