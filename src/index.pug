@@ -4,6 +4,9 @@ include blocks/contact/contact.pug
 include blocks/header/header.pug
 include blocks/skills/skills.pug
 include blocks/skill/skill.pug
+include blocks/experience/experience.pug
+include blocks/practice/practice.pug
+
 
 html
     head
@@ -17,3 +20,4 @@ html
               +contact('contact', {name: 'address', value: 'Main Street, City'}, {name: 'e-mail', value: 'contact@domain.com'}, {name: 'phone', value: '555-555-555'}, {name: 'website', value: 'www.yourweb.com'})
               +skills('skills', 12, {title: 'Creative', value: 9}, {title: 'Teamwork', value: 11}, {title: 'Innovate', value: 6}, {title: 'Communication', value: 11})
             .column-right
+                +experience('education', {name: 'Master Degree', date: 'Feb 2011 - Jun 2014', organization: 'University name', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}, {name: 'Master Degree', date: 'Feb 2011 - Jun 2014', organization: 'University name', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}, {name: 'Master Degree', date: 'Feb 2011 - Jun 2014', organization: 'University name', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}, {name: 'Master Degree', date: 'Feb 2011 - Jun 2014', organization: 'University name', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'})

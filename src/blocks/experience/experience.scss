@@ -1,0 +1,15 @@
+.education {
+    margin-top: 4.6rem;
+}
+.education__header {
+    margin-bottom: 1.8rem;
+
+    &::before {
+        background-image: url('blocks/experience/star.png');
+    }   
+}
+.experience__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

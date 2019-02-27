@@ -1,0 +1,7 @@
+mixin practice(name, title, date, organization, text)
+    li(class='experience__item')
+        p(class='experience__item-title')
+            span(class='experience__item-name', class='experience__item-name--' + name)= title
+            =' // ' + date
+        span(class='experience__item-organization')= organization
+        p(class='experience__item-text')= text
