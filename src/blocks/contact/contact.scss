@@ -22,6 +22,10 @@
     font-size: 1.31rem;
     line-height: 1.2;
 }
+.contact__link {
+    text-decoration: none;
+    color: #000000;
+}
 .contact__item:last-child {
     & > .contact__value,
     & > .contact__name {

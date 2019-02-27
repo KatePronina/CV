@@ -5,6 +5,7 @@
          url('./fonts/Myriad-Pro.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Myriad-Pro';
@@ -13,6 +14,7 @@
          url('./fonts/Myriad-Pro-Light-SemiExtended.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Myriad-Pro';
@@ -21,4 +23,5 @@
          url('./fonts/Myriad-Pro-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
