@@ -1,11 +1,21 @@
 .contact {
     margin-bottom: 2.6rem;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .contact__header  {
     margin-bottom: 1.8rem;
 
     &::before {
         background-image: url('blocks/contact/phone.png');
+    }
+}
+.contact__items {
+    @media (max-width: 768px) {
+        align-self: center;
     }
 }
 .contact__name {
