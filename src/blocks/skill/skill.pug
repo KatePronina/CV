@@ -1,0 +1,7 @@
+mixin skill(num, value, title)
+        - let i = 0
+        li.skills__item 
+            span.skills__item-name #{title}
+            .skills__item-level
+                while i < num
+                    .skills__item-value(class= i++ < value ? 'skills__item-value--enable' : 'skills__item-value--disable')

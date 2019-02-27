@@ -1,11 +1,12 @@
 .contact {
-    margin-bottom: 3.25rem;
+    margin-bottom: 2.6rem;
 }
-.contact .header {
+.header__contact  {
     margin-bottom: 1.8rem;
-}
-.contact .header__img {
-    background-image: url('blocks/contact/phone.png');
+
+    &::before {
+        background-image: url('blocks/contact/phone.png');
+    }
 }
 .contact__name {
     padding-right: 2.5rem;

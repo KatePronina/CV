@@ -1,0 +1,29 @@
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.38rem;
+}
+.skills__item-name {
+    font-size: 1.62rem;
+    text-transform: uppercase;
+    margin-bottom: .53rem;
+}
+.skills__item-level {
+    display: flex;
+    justify-content: space-between;
+    width: 20.75rem;
+}
+.skills__item-value {
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+
+    &--enable {
+        background-color: $blue;
+    }
+
+    &--disable {
+        background-color: $lightgrey;
+    }
+}

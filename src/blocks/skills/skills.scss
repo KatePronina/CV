@@ -1,0 +1,12 @@
+.header__skills {
+    margin-bottom: 1.48rem;
+
+    &::before {
+        background-image: url('blocks/skills/light.png')
+    }
+}
+.skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

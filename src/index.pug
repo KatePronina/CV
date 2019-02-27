@@ -2,6 +2,8 @@ include blocks/user/user.pug
 include blocks/profile/profile.pug
 include blocks/contact/contact.pug
 include blocks/header/header.pug
+include blocks/skills/skills.pug
+include blocks/skill/skill.pug
 
 html
     head
@@ -11,6 +13,7 @@ html
         .wrapper
             .column-left
               +user('Name here', 'Surname', 'Graphic Designer')
-              +profile('Profile', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu ', 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.')
-              +contact('Contact', {name: 'address', value: 'Main Street, City'}, {name: 'e-mail', value: 'contact@domain.com'}, {name: 'phone', value: '555-555-555'}, {name: 'website', value: 'www.yourweb.com'})
+              +profile('profile', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu ', 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.')
+              +contact('contact', {name: 'address', value: 'Main Street, City'}, {name: 'e-mail', value: 'contact@domain.com'}, {name: 'phone', value: '555-555-555'}, {name: 'website', value: 'www.yourweb.com'})
+              +skills('skills', 12, {title: 'Creative', value: 9}, {title: 'Teamwork', value: 11}, {title: 'Innovate', value: 6}, {title: 'Communication', value: 11})
             .column-right

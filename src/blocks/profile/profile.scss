@@ -1,14 +1,15 @@
 .profile {
     margin-bottom: 2.7rem;
 }
-.profile .header__img {
-    background-image: url('blocks/profile/user.png');
-} 
 .profile__description {
     margin: 0;
     font-size: 1rem;
     line-height: 1.2rem;
 }
-.profile .header {
+.header__profile {
     margin-bottom: .75rem;
+
+    &::before {
+        background-image: url('blocks/profile/user.png');
+    } 
 }
