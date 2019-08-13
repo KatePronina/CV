@@ -8,11 +8,11 @@ mixin contact(name, ...contacts)
           td.contact__value
             case contact.name
               when 'e-mail'
-                a.contact__link(href='mailto:' + contact.value)= contact.value
+                a.contact__link(href=`mailto:${contact.value}`)= contact.value
               when 'phone'
-                a.contact__link(href='tel:' + contact.value)= contact.value
+                a.contact__link(href=`tel:${contact.value}`)= contact.value
               when 'website'
-                a.contact__link(href= contact.value)= contact.value
+                a.contact__link(href=contact.value)= contact.value
               default
                 =contact.value
                             
