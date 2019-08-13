@@ -1,6 +1,6 @@
-mixin contact(name, ...contacts)
+mixin contact({ name, contacts })
   section.contact
-    +header(name)
+    +header({ name })
     table.contact__items
       each contact in contacts
         tr.contact__item
@@ -15,4 +15,3 @@ mixin contact(name, ...contacts)
                 a.contact__link(href=contact.value)= contact.value
               default
                 =contact.value
-                            

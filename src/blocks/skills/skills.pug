@@ -1,6 +1,6 @@
-mixin skills(name, num, ...items)
+mixin skills({ name, maxValue, items })
   section.skill
-    +header(name)
+    +header({ name })
     ul.skills
       each item in items
-        +skill(num, item.value, item.title)
+        +skill({ maxValue, value: item.value, title: item.title })
