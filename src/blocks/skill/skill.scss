@@ -19,11 +19,11 @@
   height: 1.125rem;
   border-radius: 50%;
 
-  &--enable {
+  &_enable {
     background-color: $blue;
   }
 
-  &--disable {
+  &_disable {
     background-color: $lightgrey;
   }
 }

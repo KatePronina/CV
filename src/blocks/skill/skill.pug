@@ -4,4 +4,4 @@ mixin skill({ maxValue, value, title })
     span.skills__item-name #{title}
     .skills__item-level(aria-label= `${value} from ${maxValue}`)
       while i < maxValue
-        .skills__item-value(class= i++ < value ? 'skills__item-value--enable' : 'skills__item-value--disable')
+        .skills__item-value(class= i++ < value ? 'skills__item-value_enable' : 'skills__item-value_disable')
