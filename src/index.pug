@@ -33,25 +33,28 @@ html
   body
     .wrapper
       .column-left
-        +user({
-          name: 'Name here',
-          surname: 'Surname',
-          profession: 'Graphic Designer',
-        })
-        +profile({
-          name: 'profile',
-          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu',
-          boldtext: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.',
-        })
-        +contact({
-          name: 'contact',
-          contacts: [
-            {name: 'address', value: 'Main Street, City'},
-            {name: 'e-mail', value: 'contact@domain.com'},
-            {name: 'phone', value: '555-555-555'},
-            {name: 'website', value: 'www.yourweb.com'},
-          ],
-        })
+        .column-left__user
+          +user({
+            name: 'Name here',
+            surname: 'Surname',
+            profession: 'Graphic Designer',
+          })
+        .column-left__profile
+          +profile({
+            name: 'profile',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu',
+            boldtext: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.',
+          })
+        .column-left__contact
+          +contact({
+            name: 'contact',
+            contacts: [
+              {name: 'address', value: 'Main Street, City'},
+              {name: 'e-mail', value: 'contact@domain.com'},
+              {name: 'phone', value: '555-555-555'},
+              {name: 'website', value: 'www.yourweb.com'},
+            ],
+          })
         +skills({
           name: 'skills',
           maxValue: 12,
@@ -75,84 +78,87 @@ html
           ],
         })
       .column-right
-        +experience({
-          name: 'education',
-          items: [
-            {
-              name: 'Master Degree',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'University name',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-            },
-            {
-              name: 'Master Degree',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'University name',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            },
-            {
-              name: 'Master Degree',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'University name',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            },
-            {
-              name: 'Master Degree',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'University name',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            }
-          ],
-        })
-        +experience({
-          name: 'experience',
-          items: [
-            {
-              name: 'Company name',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'Your job here',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            },
-            {
-              name: 'Company name',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'Your job here',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            },
-            {
-              name: 'Company name',
-              date: 'Feb 2011 - Jun 2014',
-              organization: 'Your job here',
-              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
-            },
-          ],
-        })
-        +software({
-          name: 'software',
-          programs: [
-            {
-              name: 'Photoshop',
-              percent: 91,
-            },
-            {
-              name: 'Dreamweaver',
-              percent: 80,
-            },
-            {
-              name: 'Illustrator',
-              percent: 70,
-            },
-            {
-              name: 'After Effects',
-              percent: 60,
-            },
-            {
-              name: 'Indesign',
-              percent: 56,
-            },
-            {
-              name: 'HTML&CSS3',
-              percent: 90,
-            },
-          ],
-        })
+        .column-right__education
+          +experience({
+            name: 'education',
+            items: [
+              {
+                name: 'Master Degree',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'University name',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+              },
+              {
+                name: 'Master Degree',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'University name',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              },
+              {
+                name: 'Master Degree',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'University name',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              },
+              {
+                name: 'Master Degree',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'University name',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              }
+            ],
+          })
+        .column-right__experience
+          +experience({
+            name: 'experience',
+            items: [
+              {
+                name: 'Company name',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'Your job here',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              },
+              {
+                name: 'Company name',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'Your job here',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              },
+              {
+                name: 'Company name',
+                date: 'Feb 2011 - Jun 2014',
+                organization: 'Your job here',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.',
+              },
+            ],
+          })
+        .column-right__softwate
+          +software({
+            name: 'software',
+            programs: [
+              {
+                name: 'Photoshop',
+                percent: 91,
+              },
+              {
+                name: 'Dreamweaver',
+                percent: 80,
+              },
+              {
+                name: 'Illustrator',
+                percent: 70,
+              },
+              {
+                name: 'After Effects',
+                percent: 60,
+              },
+              {
+                name: 'Indesign',
+                percent: 56,
+              },
+              {
+                name: 'HTML&CSS3',
+                percent: 90,
+              },
+            ],
+          })
