@@ -1,6 +1,6 @@
 mixin skills(name, num, ...items)
-    section.skill
-        +header(name)
-        ul.skills
-            each item in items
-                +skill(num, item.value, item.title)
+  section.skill
+    +header(name)
+    ul.skills
+      each item in items
+        +skill(num, item.value, item.title)

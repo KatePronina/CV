@@ -1,6 +1,6 @@
 mixin experience(name, ...items)
-    section(class= name, class='experience-section')
-        +header(name)
-        ul(class='experience__list')
-            each item in items
-                +practice(name, item.name, item.date, item.organization, item.text)
+  section(class= name, class='experience-section')
+    +header(name)
+    ul(class='experience__list')
+      each item in items
+        +practice(name, item.name, item.date, item.organization, item.text)

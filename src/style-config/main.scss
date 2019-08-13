@@ -1,46 +1,46 @@
 html {
-    font-size: 16px;
+  font-size: 16px;
 
-    @media (max-width: 920px) {
-        font-size: 12px;
-    }
+  @media (max-width: 920px) {
+    font-size: 12px;
+  }
 
-    @media (max-width: 375px) {
-        font-size: 11px;
-    }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
 }
 body {
-    color: #000000;
-    font-family: 'Myriad-Pro', sans-serif;
-    padding: 0;
-    margin: 0;
+  color: #000000;
+  font-family: 'Myriad-Pro', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .wrapper {
-    max-width: 1164px;
-    margin: 0 auto;
-    padding: 0 4rem;
-    display: flex;
+  max-width: 1164px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
-    @media (max-width: 375px) {
-        padding: 0 3rem;
-    }
+  @media (max-width: 375px) {
+    padding: 0 3rem;
+  }
 }
 .column-left {
-    width: 37%;
-    margin-right: auto;
+  width: 37%;
+  margin-right: auto;
 
-    @media (max-width: 768px) {
-        width: 100%;
-    }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 .column-right {
-    width: 56%;
+  width: 56%;
 
-    @media (max-width: 768px) {
-        width: 100%;
-    }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }

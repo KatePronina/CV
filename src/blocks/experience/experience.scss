@@ -1,26 +1,26 @@
 .education {
-    margin-top: 4.6rem;
-    margin-bottom: 3.36rem;
+  margin-top: 4.6rem;
+  margin-bottom: 3.36rem;
 }
 .experience {
-    margin-bottom: 3.4rem;
+  margin-bottom: 3.4rem;
 }
 .education__header {
-    margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
 
-    &::before {
-        background-image: url('blocks/experience/star.png');
-    }   
+  &::before {
+    background-image: url('blocks/experience/star.png');
+  }   
 }
 .experience__header {
-    margin-bottom: 2.65rem;
+  margin-bottom: 2.65rem;
 
-    &::before {
-        background-image: url('blocks/experience/portfolio.png');
-    }
+  &::before {
+    background-image: url('blocks/experience/portfolio.png');
+  }
 }
 .experience__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

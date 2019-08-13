@@ -1,19 +1,19 @@
 .software {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 } 
 .software__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: .4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: .4rem;
 }
 .software__header {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
-    &::before {
-        background-image: url('blocks/software/computer.png')
-    }
+  &::before {
+    background-image: url('blocks/software/computer.png')
+  }
 }
