@@ -3,32 +3,36 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-}
-.user__photo {
-  height: 13rem;
-  width: 13rem;
-  background-color: $blue;
-  border-radius: 50%;
-  background-clip: content-box;
-  padding: 0.87rem;
-  border: 2px solid $blue;
-  margin-bottom: 1.8rem;
-}
-.user__name {
-  font-weight: 300;
-  font-size: 3.37rem;
-  line-height: 1;
-  text-align: center;
-}
-.user__surname {
-  font-size: 3.93rem;
-  line-height: 1;
-  font-weight: bold;
-  margin-bottom: .5rem;
-  letter-spacing: 1px;
-}
-.user__profession {
-  font-size: 1.56rem;
-  font-weight: bold;
-  line-height: 1.2;
+
+  &__photo {
+    height: 13rem;
+    width: 13rem;
+    background-color: $blue;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 0.87rem;
+    border: 2px solid $blue;
+    margin-bottom: 1.8rem;
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: 3.37rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__surname {
+    font-size: 3.93rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    letter-spacing: 1px;
+  }
+
+  &__profession {
+    font-size: 1.56rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
 }

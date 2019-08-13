@@ -1,18 +1,23 @@
-.software__item {
-  width: 44.47%;
-  margin-bottom: 1.5rem;
-}
-.software__name {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-}
-.software__bar {
-  margin-top: .85rem;
-  height: 1.4375rem;
-  background-color: $lightgrey;
-}
-.software__progress {
-  background-color: $blue;
-  height: 100%;
+.software {
+  &__item {
+    width: 44.47%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+  &__bar {
+    margin-top: .85rem;
+    height: 1.4375rem;
+    background-color: $lightgrey;
+  }
+
+  &__progress {
+    background-color: $blue;
+    height: 100%;
+  }
 }

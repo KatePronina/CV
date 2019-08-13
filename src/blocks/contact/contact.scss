@@ -3,40 +3,46 @@
     display: flex;
     flex-direction: column;
   }
-}
-.contact__header  {
-  margin-bottom: 1.8rem;
 
-  &::before {
-    background-image: url('blocks/contact/phone.png');
-  }
-}
-.contact__items {
-  @media (max-width: 768px) {
-    align-self: center;
-  }
-}
-.contact__name {
-  padding-right: 2.5rem;
-  padding-bottom: 1.8rem;
+  &__header {
+    margin-bottom: 1.8rem;
 
-  font-size: 1.31rem;
-  color: $blue;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.contact__value {
-  padding-bottom: 1.6rem;
-  font-size: 1.31rem;
-  line-height: 1.2;
-}
-.contact__link {
-  text-decoration: none;
-  color: #000000;
-}
-.contact__item:last-child {
-  & > .contact__value,
-  & > .contact__name {
-    padding-bottom: 0
+    &::before {
+      background-image: url('blocks/contact/phone.png');
+    }
+  }
+
+  &__items {
+    @media (max-width: 768px) {
+      align-self: center;
+    }
+  }
+
+  &__name {
+    padding-right: 2.5rem;
+    padding-bottom: 1.8rem;
+
+    font-size: 1.31rem;
+    color: $blue;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    padding-bottom: 1.6rem;
+    font-size: 1.31rem;
+    line-height: 1.2;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  &__item:last-child {
+    & > .contact__value,
+    & > .contact__name {
+      padding-bottom: 0
+    }
   }
 }

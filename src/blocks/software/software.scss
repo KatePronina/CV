@@ -1,16 +1,19 @@
-.software__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: .4rem;
-}
-.software__header {
-  margin-bottom: 1.5rem;
+.software {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: .4rem;
+  }
 
-  &::before {
-    background-image: url('blocks/software/computer.png')
+  &__header {
+    margin-bottom: 1.5rem;
+
+    &::before {
+      background-image: url('blocks/software/computer.png')
+    }
   }
 }

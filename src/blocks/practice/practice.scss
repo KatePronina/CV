@@ -1,41 +1,48 @@
-.experience__item {
-  padding-left: 3.35rem;
-  position: relative;
-  margin-bottom: .7rem;
+.experience,
+.education {
+  &__item {
+    padding-left: 3.35rem;
+    position: relative;
+    margin-bottom: .7rem;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 1.25rem;
-    height: 1.25rem;
-    background-color: #000000;
-    border-radius: 50%;
-    left: .7rem;
-    top: .37rem;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: #000000;
+      border-radius: 50%;
+      left: .7rem;
+      top: .37rem;
+    }
+  }
+
+  &__item-title {
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: .3rem;
+    letter-spacing: .5px;
+  }
+
+  &__item-name {
+    margin-right: .7rem;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__item-organization {
+    display: block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+    letter-spacing: .3px;
+  }
+
+  &__item-text {
+    margin: 0;
   }
 }
-.experience__item-title {
-  font-size: 1.6rem;
-  margin: 0;
-  margin-bottom: .3rem;
-  letter-spacing: .5px;
-}
-.experience__item-name {
-  margin-right: .7rem;
-  letter-spacing: .4px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.experience__item-name_education {
+.education__item-name {
   color: $blue;
-}
-.experience__item-organization {
-  display: block;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: .4rem;
-  letter-spacing: .3px;
-}
-.experience__item-text {
-  margin: 0;
 }
