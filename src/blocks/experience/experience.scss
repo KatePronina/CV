@@ -2,14 +2,14 @@
   margin-bottom: 1.8rem;
 
   &::before {
-    background-image: url('blocks/experience/star.png');
+    background-image: url('./star.png');
   }   
 }
 .experience__header {
   margin-bottom: 2.65rem;
 
   &::before {
-    background-image: url('blocks/experience/portfolio.png');
+    background-image: url('./portfolio.png');
   }
 }
 .experience__list,
