@@ -14,6 +14,6 @@ mixin contact({ name, contacts })
               when 'phone'
                 a.contact__link(href=`tel:${contact.value}`)= contact.value
               when 'website'
-                a.contact__link(href=contact.value)= contact.value
+                a.contact__link(href=`https://${contact.value}`, target="_blank", rel="noopener noreferrer")= contact.value
               default
                 =contact.value
