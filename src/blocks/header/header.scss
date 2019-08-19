@@ -16,6 +16,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-right: .75rem;
+    flex-shrink: 0;
 
     @media (max-width: 768px) {
       background-size: 60%;
@@ -38,5 +39,9 @@
     text-transform: uppercase;
     letter-spacing: .6px;
     color: $blue;
+
+    @media (max-width: 920px) {
+      font-size: 2.4rem;
+    }
   }
 }
