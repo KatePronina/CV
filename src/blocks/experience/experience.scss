@@ -55,21 +55,4 @@
   &__item-name {
     color: $blue;
   }
-
-  &__header {
-    margin-bottom: 1.8rem;
-
-    &::before {
-      background-image: url('./star.png');
-    }   
-  }
-}
-.experience {
-  &__header {
-    margin-bottom: 2.65rem;
-
-    &::before {
-      background-image: url('./portfolio.png');
-    }
-  }
 }

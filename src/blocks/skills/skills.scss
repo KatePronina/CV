@@ -7,14 +7,6 @@
     list-style: none;
   }
 
-  &__header {
-    margin-bottom: 1.48rem;
-
-    &::before {
-      background-image: url('./light.png')
-    }
-  }
-
   &__item {
     display: flex;
     flex-direction: column;
