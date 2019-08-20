@@ -21,6 +21,11 @@
     @media (max-width: 768px) {
       background-size: 60%;
     }
+
+    @media (max-width: 480px) {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   &::after {
@@ -39,9 +44,14 @@
     text-transform: uppercase;
     letter-spacing: .6px;
     color: $blue;
+    word-break: break-all;
 
     @media (max-width: 920px) {
       font-size: 2.4rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
     }
   }
 }
