@@ -1,9 +1,13 @@
 include ../header/header.pug
-include ../skill/skill.pug
 
 mixin skills({ name, maxValue, items })
   section.skills
     +header({ name })
     ul.skills__list
       each item in items
-        +skill({ maxValue, value: item.value, title: item.title })
+        - let i = 0
+        li.skills__item
+          span.skills__item-name #{item.title}
+          .skills__item-level(aria-label= `${item.value} from ${maxValue}`)
+            while i < maxValue
+              .skills__item-value(class= i++ < item.value ? 'skills__item-value_enable' : 'skills__item-value_disable')

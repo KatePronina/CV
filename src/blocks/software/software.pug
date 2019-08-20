@@ -1,9 +1,11 @@
 include ../header/header.pug
-include ../softwareItem/softwareItem.pug
 
 mixin software({ name, programs })
   section.software
     +header({ name })
     ul.software__list
       each program in programs
-        +softwareItem({ name: program.name, percent: program.percent })
+        li.software__list-item
+          span.software__list-item-name= program.name
+          .software__list-item-bar
+            .software__list-item-progress(aria-label= `${program.percent}%`, style=`width: ${program.percent}%`)

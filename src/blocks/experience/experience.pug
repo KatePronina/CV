@@ -1,4 +1,3 @@
-include ../practice/practice.pug
 include ../header/header.pug
 
 mixin experience({ name, items })
@@ -6,4 +5,9 @@ mixin experience({ name, items })
     +header({ name })
     ul(class=`${name}__list`)
       each item in items
-        +practice({ name, title: item.name, date: item.date, organization: item.organization, text: item.text })
+        li(class=`${name}__item`)
+          p(class=`${name}__item-title`)
+            span(class=`${name}__item-name`)= item.name
+            =` // ${item.date}`
+          span(class=`${name}__item-organization`)= item.organization
+          p(class=`${name}__item-text`)= item.text

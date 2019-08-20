@@ -1,3 +1,5 @@
+@import '../../style-config/colors.scss';
+
 .software {
   &__list {
     margin: 0;
@@ -12,6 +14,32 @@
       padding-left: 0;
       flex-direction: column;
       align-items: center;
+    }
+
+    &-item {
+      width: 44.47%;
+      margin-bottom: 1.5rem;
+    
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    
+      &-name {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+      }
+    
+      &-bar {
+        margin-top: .85rem;
+        height: 1.4375rem;
+        background-color: $lightgrey;
+      }
+    
+      &-progress {
+        background-color: $blue;
+        height: 100%;
+      }
     }
   }
 
