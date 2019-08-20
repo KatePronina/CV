@@ -3,6 +3,10 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.2rem;
+
+    &_theme_bold {
+      font-weight: bold;
+    }
   }
 
   &__header {
