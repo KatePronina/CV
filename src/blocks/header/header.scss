@@ -54,52 +54,52 @@
       font-size: 2rem;
     }
   }
+}
 
-  &_contact {
-    margin-bottom: 1.8rem;
+.contact__header {
+  margin-bottom: 1.8rem;
 
-    &::before {
-      background-image: url('../contact/phone.png');
-    }
+  &::before {
+    background-image: url('../contact/phone.png');
   }
+}
 
-  &_education {
-    margin-bottom: 1.8rem;
+.education__header {
+  margin-bottom: 1.8rem;
 
-    &::before {
-      background-image: url('../experience/star.png');
-    }
+  &::before {
+    background-image: url('../experience/star.png');
   }
+}
 
-  &_experience {
-    margin-bottom: 2.65rem;
+.experience__header {
+  margin-bottom: 2.65rem;
 
-    &::before {
-      background-image: url('../experience/portfolio.png');
-    }
+  &::before {
+    background-image: url('../experience/portfolio.png');
   }
+}
 
-  &_profile {
-    margin-bottom: .75rem;
+.profile__header {
+  margin-bottom: .75rem;
 
-    &::before {
-      background-image: url('../profile/user.png');
-    } 
+  &::before {
+    background-image: url('../profile/user.png');
+  } 
+}
+
+.skills__header {
+  margin-bottom: 1.48rem;
+
+  &::before {
+    background-image: url('../skills/light.png');
   }
+}
 
-  &_skills {
-    margin-bottom: 1.48rem;
+.software__header {
+  margin-bottom: 1.5rem;
 
-    &::before {
-      background-image: url('../skills/light.png');
-    }
-  }
-
-  &_software{
-    margin-bottom: 1.5rem;
-
-    &::before {
-      background-image: url('../software/computer.png');
-    }
+  &::before {
+    background-image: url('../software/computer.png');
   }
 }
