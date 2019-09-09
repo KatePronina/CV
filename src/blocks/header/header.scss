@@ -60,7 +60,7 @@
   margin-bottom: 1.8rem;
 
   &::before {
-    background-image: url('../contact/phone.png');
+    background-image: url('~src/images/phone.png');
   }
 }
 
@@ -68,7 +68,7 @@
   margin-bottom: 1.8rem;
 
   &::before {
-    background-image: url('../experience/star.png');
+    background-image: url('~src/images/star.png');
   }
 }
 
@@ -76,7 +76,7 @@
   margin-bottom: 2.65rem;
 
   &::before {
-    background-image: url('../experience/portfolio.png');
+    background-image: url('~src/images/portfolio.png');
   }
 }
 
@@ -84,7 +84,7 @@
   margin-bottom: .75rem;
 
   &::before {
-    background-image: url('../profile/user.png');
+    background-image: url('~src/images/user.png');
   } 
 }
 
@@ -92,7 +92,7 @@
   margin-bottom: 1.48rem;
 
   &::before {
-    background-image: url('../skills/light.png');
+    background-image: url('~src/images/light.png');
   }
 }
 
@@ -100,6 +100,6 @@
   margin-bottom: 1.5rem;
 
   &::before {
-    background-image: url('../software/computer.png');
+    background-image: url('~src/images/computer.png');
   }
 }

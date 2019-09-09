@@ -12,6 +12,11 @@ let conf = {
   devServer: {
     overlay: true
   },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, './src'),
+    },
+  },
   module: {
     rules: [
       {
