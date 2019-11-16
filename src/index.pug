@@ -4,6 +4,7 @@ include blocks/contact/contact.pug
 include blocks/skills/skills.pug
 include blocks/experience/experience.pug
 include blocks/software/software.pug
+include blocks/wrapper/wrapper.pug
 
 html
   head
@@ -29,21 +30,21 @@ html
     meta(name='msapplication-TileImage', content=require('./favicons/ms-icon-144x144.png'))
     meta(name='theme-color', content='#ffffff')
   body
-    .wrapper
-      .column-left
-        .column-left__user
+    +wrapper
+      .wrapper__column-left
+        .wrapper__user
           +user({
             name: 'Name here',
             surname: 'Surname',
             profession: 'Graphic Designer',
           })
-        .column-left__profile
+        .wrapper__profile
           +profile({
             name: 'profile',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu',
             boldtext: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.',
           })
-        .column-left__contact
+        .wrapper__contact
           +contact({
             name: 'contact',
             contacts: [
@@ -75,8 +76,8 @@ html
             },
           ],
         })
-      .column-right
-        .column-right__education
+      .wrapper__column-right
+        .wrapper__education
           +experience({
             name: 'education',
             items: [
@@ -106,7 +107,7 @@ html
               }
             ],
           })
-        .column-right__experience
+        .wrapper__experience
           +experience({
             name: 'experience',
             items: [
@@ -130,7 +131,7 @@ html
               },
             ],
           })
-        .column-right__softwate
+        .wrapper__softwate
           +software({
             name: 'software',
             programs: [
