@@ -2,7 +2,8 @@ include ../header/header.pug
 
 mixin skills({ name, maxValue, items })
   section.skills
-    +header({ name })
+    .skills__header
+      +header({ name })
     ul.skills__list
       each item in items
         - let i = 0

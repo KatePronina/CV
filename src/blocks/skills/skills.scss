@@ -1,6 +1,10 @@
 @import '../../style-config/colors.scss';
 
 .skills {
+  &__header {
+    margin-bottom: 1.48rem;
+  }
+
   &__list {
     margin: 0;
     padding: 0;

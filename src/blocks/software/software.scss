@@ -1,6 +1,10 @@
 @import '../../style-config/colors.scss';
 
 .software {
+  &__header {
+    margin-bottom: 1.5rem;
+  }
+
   &__list {
     margin: 0;
     padding: 0;

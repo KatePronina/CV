@@ -6,6 +6,10 @@
     flex-direction: column;
   }
 
+  &__header {
+    margin-bottom: 1.8rem;
+  }
+
   &__items {
     @media (max-width: 768px) {
       align-self: center;

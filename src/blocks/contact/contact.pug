@@ -2,7 +2,8 @@ include ../header/header.pug
 
 mixin contact({ name, contacts })
   section.contact
-    +header({ name })
+    .contact__header
+      +header({ name })
     table.contact__items
       each contact in contacts
         tr.contact__item

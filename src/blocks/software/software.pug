@@ -2,7 +2,8 @@ include ../header/header.pug
 
 mixin software({ name, programs })
   section.software
-    +header({ name })
+    .software__header
+      +header({ name })
     ul.software__list
       each program in programs
         li.software__list-item

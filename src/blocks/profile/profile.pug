@@ -2,6 +2,7 @@ include ../header/header.pug
 
 mixin profile({ name, text, boldtext })
   section.profile
-    +header({ name })
+    .profile__header
+      +header({ name })
     p.profile__description= text
       span.profile__description.profile__description_theme_bold= boldtext

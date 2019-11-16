@@ -2,7 +2,8 @@ include ../header/header.pug
 
 mixin experience({ name, items })
   section(class= name)
-    +header({ name })
+    div(class=`${name}__header`)
+      +header({ name })
     ul(class=`${name}__list`)
       each item in items
         li(class=`${name}__item`)
