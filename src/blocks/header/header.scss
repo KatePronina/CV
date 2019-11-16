@@ -57,27 +57,27 @@
 
   &_type {
     &_contact::before {
-      background-image: url('~src/images/phone.png');
+      background-image: url('./images/phone.png');
     }
 
     &_education::before {
-      background-image: url('~src/images/star.png');
+      background-image: url('./images/star.png');
     }
 
     &_experience::before {
-      background-image: url('~src/images/portfolio.png');
+      background-image: url('./images/portfolio.png');
     }
 
     &_profile::before {
-      background-image: url('~src/images/user.png');
+      background-image: url('./images/user.png');
     }
 
     &_skills::before {
-      background-image: url('~src/images/light.png');
+      background-image: url('./images/light.png');
     }
 
     &_software::before {
-      background-image: url('~src/images/computer.png');
+      background-image: url('./images/computer.png');
     }
   }
 }
